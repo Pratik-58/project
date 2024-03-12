@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO LIST</title>
+</head>
+<body>
+    <main class="bg-img">
+        <section>
+            <button type="button" class="add-btn">Add TODO</button>
+            <p>TODO</p>
+        </section>
+        <section class="title">
+            <h1>TODO</h1>
+        </section>
+        <section class="info">
+            <div class="content">
+               </div>
+               
+
+        </section>
+
+        <section class="overlay d-none " id="popup">
+            <div class="signup">
+                
+                <div class="u-info">
+                    <label for=""> Todo Name </label>
+                    <input id="name" type="text" placeholder="">
+                </div>
+                <div class="u-info">
+                    <label for="">Description </label>
+                    <!-- <input id="description" type="text" placeholder=""> -->
+                    <textarea name="" id="desc" cols="10" rows="10"></textarea>
+                </div>
+                <div class="u-info">
+                    <label for="">priority</label>
+                    <select id="priority" width="30">
+                        <option>---select---</option>
+                        <option id="high">High</option>
+                        <option id="medium">Medium</option>
+                        <option id="low">Low</option>
+                    </select>
+                </div>
+    
+                <div class="signupbtn">
+                    <button id="save" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                        Save</button>
+                    <button id="cancel" type="button">cancel</button>
+                </div>
+                
+    
+                
+            </div>
+            </section>
+    </main>    
+    <script src="/js/todo.js"></script>
+</body>
+</html>
